@@ -33,6 +33,6 @@ export const getCurrentUTCTime = async () => {
     } catch (error) {
         console.error("Error fetching time:", error);
         // Fallback to less accurate method using Date
-        return new Date().toISOString();
+        return formatTIme(new Date().toISOString());
     }
 }
