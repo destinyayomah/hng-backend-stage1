@@ -7,7 +7,7 @@ export class ApiController {
     constructor(private readonly apiService: ApiService){}
 
     @Get()
-    @HttpCode(HttpStatus.CREATED)
+    @HttpCode(HttpStatus.OK)
     async getUser(@Query() dto: ApiDto){
         return await this.apiService.getUser(dto);
     }

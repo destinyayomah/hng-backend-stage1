@@ -1,7 +1,7 @@
 export class UserDto{
     slack_name: string
-    current_Day: string
-    utc_time: Promise<Date> | Date
+    current_day: string
+    utc_time: Promise<String> | String
     track: string
     github_file_url: string
     github_repo_url: string
