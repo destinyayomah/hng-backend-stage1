@@ -15,9 +15,9 @@ export class ApiService {
 
             const user: UserDto = {
                 slack_name: dto.slack_name,
-                track: dto.track,
                 current_day: currentDayOfWeek(),
                 utc_time: await getCurrentUTCTime(),
+                track: dto.track,
                 github_file_url: 'https://github.com/destinyayomah/hng-backend-stage1/blob/main/src/main.ts',
                 github_repo_url: 'https://github.com/destinyayomah/hng-backend-stage1',
                 status_code: 200
